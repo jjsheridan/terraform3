@@ -43,12 +43,3 @@ data "terraform_remote_state" "mybucket"	{
 	  region = "us-west-2"
 	  }
 	}
-#terraform {
-#	backend "s3" {
-#	region = "us-west-2"
-#	bucket = "tfstatez321"
-#	key = "terraform.tfstate"
-#	encrypt = true
-#		}
-#	depends_on = ["aws_s3_bucket.tf-state-bucket"]
-#	}
